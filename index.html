@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forma za cas 8</title>
+    <script src="/public/js/data.js" defer></script>
     <script src="/public/js/app.js" defer></script>
-</head>
-<body>
-    <h1>Forma</h1>
-    <form action="">
-        <input type="text" name="name" id="name">
-    </form>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container my-3">
+      <h1 class="mb-3">Forma za unos tipa ljubimca</h1>
+      <form action="">
+        <div class="mb-2">
+          <label for="petType" class="form-label">Tip ljubimca</label>
+          <select id="petType" class="form-select form-select-lg mb-3">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <label for="petBreed" class="form-label">Rasa ljubimca</label>
+          <select id="petBreed" class="form-select form-select-lg mb-3">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-2">
+            <label for="petOther" class="form-label">Unesi naziv rase</label>
+            <input type="text" id="petOther" class="form-control" />
+          </div>
+      </form>
+    </div>
+  </body>
 </html>
