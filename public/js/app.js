@@ -13,3 +13,14 @@ petTypes.forEach((el) => {
   listItem.innerHTML = el.name;
   petSelect.appendChild(listItem);
 });
+
+petSelect.addEventListener("change" , () => {
+    if (petSelect.value === "3"){
+      document.getElementById("petOther").parentElement.classList.remove("d-none");
+      document.getElementById("petBreed").parentElement.classList.add("d-none");
+    } else {
+      document.getElementById("petOther").parentElement.classList.add("d-none");
+      document.getElementById("petBreed").parentElement.classList.remove("d-none");
+    }
+  
+  });
